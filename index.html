@@ -15,7 +15,7 @@
     <body>
         <header class="vh-100">
             <!-- Navigation -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
                 <div class="container">
                     <a class="navbar-brand" href="#">Mon Portfolio</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +27,7 @@
                                 <a class="nav-link" href="#">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Projects</a>
+                                <a class="nav-link" href="#projets">Projects</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Skills</a>
@@ -53,37 +53,28 @@
             </div>
         </header>
 
+        <div class="row m-4">
+            <h2 editable="inline" class="display-3 mb-3 text-center p-4"><b>Qui suis-je ?</b></h2>
+            <div class="col-md-6 offset-md-3">
+                <div class="lc-block text-center mb-4"><img alt="" class="border rounded-circle" src="/assets/images/corentin.jpg" style="width:25vh;" loading="lazy"></div>
+                <div class="lc-block text-center">
+                    <div editable="rich">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo nulla, suscipit non dapibus vitae, dignissim id quam. Donec eget nulla tellus.&nbsp;</p>
+                    </div>
 
-        <div class="container py-4">
-            <div class="row">
-                <div class="col-md-6 offset-md-3 mb-2">
-                    <div class="lc-block text-center">
-                        <h2 editable="inline" class="display-3 mb-3"><b>Qui suis-je ?</b></h2>
+                    <div editable="rich">
+                        <h5><strong>&nbsp;Corentin Châlons</strong></h5>
                     </div>
                 </div>
+                <!-- /lc-block -->
             </div>
-
-            <div class="row">
-                <div class="col-md-6 offset-md-3">
-                    <div class="lc-block text-center mb-4"><img alt="" class="rounded-circle" src="/assets/images/corentin.jpg" style="width:30vh;" loading="lazy"></div>
-                    <div class="lc-block text-center">
-                        <div editable="rich">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo nulla, suscipit non dapibus vitae, dignissim id quam. Donec eget nulla tellus.&nbsp;</p>
-                        </div>
-
-                        <div editable="rich">
-                            <h5><strong>&nbsp;Corentin Châlons</strong></h5>
-                        </div>
-                    </div>
-                    <!-- /lc-block -->
-                </div>
-                <!-- /col -->
-            </div>
+            <!-- /col -->
+        </div>
         </div>
 
+        <h2 id="projets" class="text-center">Mes projets</h2>
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
-                <h2 class="text-center">Mes projets</h2>
                 <div class="card">
                     <img src="/assets/images/reims.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -121,7 +112,8 @@
             </div>
         </div>
 
-        <div class="h-50 row justify-content-center">
+        <h1 class="text-center">Mes skills</h1>
+        <div class="h-50 w-75 row justify-content-center mx-auto">
             <div class="progress">
                 <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
